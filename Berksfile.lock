@@ -1,0 +1,50 @@
+DEPENDENCIES
+  aws
+    git: https://github.com/opscode-cookbooks/aws.git
+    revision: 8347afe0def1800275537562086cbe47accfdec4
+    tag: v2.2.2
+  exhibitor
+    git: git://github.com/SimpleFinance/chef-exhibitor.git
+    revision: 1a97e8f08233914457197b1a045d26bc93f7295b
+    tag: 0.3.1
+  java
+    git: git://github.com/opscode-cookbooks/java.git
+    revision: af5e579247b7183805559bed73e2e08164dc25c6
+    tag: v1.21.2
+  solrcloud
+    git: git://github.com/vkhatri/chef-solrcloud.git
+    revision: 9496f5baa830566d1b5c10ea072a04b18163de71
+    tag: v0.5.0
+  ulimit
+    git: git://github.com/bmhatfield/chef-ulimit.git
+    revision: 9bd1dec9f15b2d378181a70bc8905a03f60bd471
+    tag: v0.3.2
+  zookeeper
+    git: git://github.com/SimpleFinance/chef-zookeeper.git
+    revision: fa5d77067e2b931d8bd43ed20ce0decb66691a07
+    tag: 2.4.3
+
+GRAPH
+  aws (2.2.2)
+  build-essential (2.1.3)
+  exhibitor (0.3.1)
+    build-essential (>= 0.0.0)
+    java (>= 0.0.0)
+    runit (>= 0.0.0)
+    zookeeper (>= 2.0.0)
+  java (1.21.2)
+  runit (1.5.16)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  solrcloud (0.5.0)
+    java (>= 0.0.0)
+    ulimit (>= 0.0.0)
+  ulimit (0.3.2)
+  yum (3.5.3)
+  yum-epel (0.6.0)
+    yum (~> 3.0)
+  zookeeper (2.4.3)
+    build-essential (>= 2.0.2)
+    java (>= 0.0.0)
+    runit (>= 0.0.0)
